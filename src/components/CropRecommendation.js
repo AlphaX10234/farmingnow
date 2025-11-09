@@ -65,7 +65,7 @@ const CropRecommendation = () => {
 
         try {
             const response = await axios.post(
-                'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyC3_eBo1e6hL3QEnqQ1JWG95rzNsearDu8',
+                `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${process.env.REACT_APP_API_KEY}`,
                 {
                     contents: [
                         {
